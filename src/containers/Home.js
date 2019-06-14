@@ -16,7 +16,7 @@ class Home extends Component {
   }
 
   handleListNames = () => {
-    return this.setState({ ...this.state, listNames: [...this.state.listNames, this.state.name] })
+    return this.setState({ listNames: [...this.state.listNames, this.state.name] })
   }
 
   render() {
