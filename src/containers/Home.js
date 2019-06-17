@@ -21,23 +21,21 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
-        <Card>
-          <div className="input-data">
-            <Input
-              onInput={this.handleName}
-            />
-            <Button
-              onClick={this.handleListNames}
-            >
-              Incluir Nome
-            </Button>
-          </div>
-          <div>
-            {this.state.listNames.map(el => <p>{el}</p>)}
-          </div>
-        </Card>
-      </div>
+      <Card>
+        <div className="input-data">
+          <Input
+            onInput={this.handleName}
+          />
+          <Button
+            onClick={this.handleListNames}
+          >
+            Incluir Nome
+          </Button>
+        </div>
+        <div>
+          {this.state.listNames.map(el => <p>{el}</p>)}
+        </div>
+      </Card>
     );
   }
 }
